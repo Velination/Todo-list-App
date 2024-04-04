@@ -7,7 +7,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 1;
+  width: 0;
 }
 
 body {
@@ -57,7 +57,7 @@ body {
 }
 
 .screen-backdrop {
-  width: 100%;
+  width: 125%;
   height: 25rem;
   position: absolute;
   top: 0%;
@@ -65,7 +65,7 @@ body {
   z-index: -1;
   transform: translateX(-50%);
   border-radius: 0 0 50% 50%;
-  background-color: #f9ea85;
+  background-color: #9685f9;
   transition: all 0.3s;
 }
 
@@ -108,7 +108,7 @@ body {
   width: 3.8rem;
   height: 4rem;
   border-radius: 50%;
-  background-color: #fdfbaf;
+  background-color: #ffffff;
   z-index: -1;
 }
 
@@ -218,6 +218,13 @@ body {
   overflow: auto;
 }
 
+.no-tasks {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  opacity: 0.6;
+}
+
 .tasks {
   padding-top: 1rem;
   display: flex;
@@ -319,13 +326,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f9ea85;
+  background-color: #9685f9;
   transition: all 0.3s;
 }
 
 .add-task-btn.active {
   z-index: 1;
   bottom: 20rem;
+  transform: rotate(45deg);
 }
 
 .add-task-btn:hover {
@@ -392,7 +400,9 @@ body {
 }
 
 .btns button {
+  z-index: 2;
   padding: 10px 20px;
+  margin-right: 20px;
   border-radius: 5px;
   border: none;
   outline: none;
